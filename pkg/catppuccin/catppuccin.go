@@ -23,6 +23,9 @@ var (
 )
 
 // New creates new log styles based the provided flavor of Catppuccin.
+//
+// For information about the different flavors and style guide, see:
+// https://catppuccin.com/
 func New(f Variant) *log.Styles {
 	d := log.DefaultStyles()
 
