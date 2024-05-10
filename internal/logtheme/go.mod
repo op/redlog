@@ -1,4 +1,4 @@
-module github.com/op/logstyles/internal/logtheme
+module github.com/op/redlog/internal/logtheme
 
 go 1.22.1
 

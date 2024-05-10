@@ -5,7 +5,7 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/op/logstyles/internal/logtheme"
+	"github.com/op/redlog/internal/logtheme"
 )
 
 // Theme consists of 4 beautiful pastel color palettes. The theme comes in one

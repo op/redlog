@@ -3,8 +3,8 @@ package themes
 import (
 	"strings"
 
-	"github.com/op/logstyles/internal/logtheme"
-	"github.com/op/logstyles/pkg/catppuccin"
+	"github.com/op/redlog/internal/logtheme"
+	"github.com/op/redlog/pkg/catppuccin"
 )
 
 var Themes = []logtheme.Theme{

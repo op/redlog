@@ -1,15 +1,15 @@
-module github.com/op/logstyles/internal/themes
+module github.com/op/redlog/internal/themes
 
 go 1.22.1
 
 replace (
-	github.com/op/logstyles/internal/logtheme => ../logtheme
-	github.com/op/logstyles/pkg/catppuccin => ../../pkg/catppuccin
+	github.com/op/redlog/internal/logtheme => ../logtheme
+	github.com/op/redlog/pkg/catppuccin => ../../pkg/catppuccin
 )
 
 require (
-	github.com/op/logstyles/internal/logtheme v0.0.0-00010101000000-000000000000
-	github.com/op/logstyles/pkg/catppuccin v0.0.0-00010101000000-000000000000
+	github.com/op/redlog/internal/logtheme v0.0.0-00010101000000-000000000000
+	github.com/op/redlog/pkg/catppuccin v0.0.0-00010101000000-000000000000
 )
 
 require (

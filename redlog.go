@@ -1,8 +1,8 @@
-package logstyles
+package redlog
 
 import (
 	"github.com/charmbracelet/log"
-	"github.com/op/logstyles/internal/themes"
+	"github.com/op/redlog/internal/themes"
 )
 
 type option struct {
@@ -17,6 +17,9 @@ func WithVariant(name string) func(*option) {
 	return func(o *option) { o.variant = name }
 }
 
+// Default is the default theme style.
+var Default = themes.Default.Default.Styles
+
 // Theme returns the most suitable theme given the provided arguments.
 func Theme(name string, opts ...Option) *log.Styles {
 	o := option{name: name}
@@ -26,8 +29,7 @@ func Theme(name string, opts ...Option) *log.Styles {
 
 	t, ok := themes.ByName(o.name)
 	if !ok {
-		t = themes.Default
-		return t.Default.Styles
+		return Default
 	}
 	v, ok := themes.VariantByName(t, o.variant)
 	if !ok {

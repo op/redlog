@@ -3,12 +3,12 @@
 set -euo pipefail
 
 FREEZE="go run github.com/charmbracelet/freeze@v0.1.6"
-LOGSTYLES="go run github.com/op/logstyles/cmd/logstyles"
+REDLOG="go run github.com/op/redlog/cmd/redlog"
 ASSETS="$(git rev-parse --show-toplevel)/assets"
 
-for theme_json in $($LOGSTYLES); do
+for theme_json in $($REDLOG); do
 	theme_name=$(jq -r '.name' <<<"$theme_json")
-	for variant_json in $($LOGSTYLES -theme "$theme_name"); do
+	for variant_json in $($REDLOG -theme "$theme_name"); do
 		variant_name=$(jq -r '.name' <<<"$variant_json")
 		background=$(jq -r '.background' <<<"$variant_json")
 
@@ -24,7 +24,7 @@ for theme_json in $($LOGSTYLES); do
 			--border.width 1 \
 			--border.color "#515151" \
 			--padding 20 \
-			--execute "$LOGSTYLES -theme $theme_name -variant $variant_name" \
+			--execute "$REDLOG -theme $theme_name -variant $variant_name" \
 			--output "$ASSETS/$theme_name-$variant_name.webp"
 	done
 done

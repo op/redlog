@@ -17,7 +17,7 @@ var (
 	// Macchiato has medium contrast with gentle colors creating a soothing
 	// atmosphere.
 	Macchiato = FromFlavour(catppuccin.Macchiato)
-	// Mocha is the Original and the darkest variant, offering a cozy feeling
+	// Mocha is the original and the darkest variant, offering a cozy feeling
 	// with color-rich accents.
 	Mocha = FromFlavour(catppuccin.Mocha)
 )

@@ -1,4 +1,4 @@
-module github.com/op/logstyles/pkg/catppuccin
+module github.com/op/redlog/pkg/catppuccin
 
 go 1.22.1
 
@@ -6,7 +6,7 @@ require (
 	github.com/catppuccin/go v0.2.0
 	github.com/charmbracelet/lipgloss v0.10.0
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/logstyles/internal/logtheme v0.0.0-00010101000000-000000000000
+	github.com/op/redlog/internal/logtheme v0.0.0-00010101000000-000000000000
 )
 
 require (
@@ -22,4 +22,4 @@ require (
 	golang.org/x/sys v0.13.0 // indirect
 )
 
-replace github.com/op/logstyles/internal/logtheme => ../../internal/logtheme
+replace github.com/op/redlog/internal/logtheme => ../../internal/logtheme

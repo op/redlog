@@ -13,8 +13,8 @@ import (
 
 	"github.com/charmbracelet/log"
 
-	"github.com/op/logstyles/internal/logtheme"
-	"github.com/op/logstyles/internal/themes"
+	"github.com/op/redlog/internal/logtheme"
+	"github.com/op/redlog/internal/themes"
 )
 
 var (
