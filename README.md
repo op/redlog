@@ -68,13 +68,19 @@ slog.SetDefault(slog.New(log.Default()))
 It is possible to request a specific theme.
 
 ```go
-log.SetStyles(redlog.Theme("catppuccin"))
+styles, _ := redlog.Theme("catppuccin")
+logger := log.New(os.Stderr)
+logger.SetStyles(styles)
 ```
 
 And with a specific variation of the theme.
 
 ```go
-log.SetStyles(redlog.Theme("catppuccin", redlog.WithVariant("mocha")))
+styles, err := redlog.Theme("catppuccin", redlog.WithVariant("mocha"))
+if err != nil {
+    log.Fatal(err)
+}
+log.SetStyles(styles)
 ```
 
 ## Specific theme
