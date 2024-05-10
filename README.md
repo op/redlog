@@ -15,6 +15,32 @@ following themes are provided:
 
 [log]: /charmbracelet/log
 
+## Gallery
+
+*Catppuccin Latte*
+
+<picture>
+    <img width="500" src="./assets/catppuccin-latte.svg" alt="catppuccin latte" />
+</picture>
+
+*Catppuccin Frappé*
+
+<picture>
+    <img width="500" src="./assets/catppuccin-frappe.svg" alt="catppuccin frappe" />
+</picture>
+
+*Catppuccin Macchiato*
+
+<picture>
+    <img width="500" src="./assets/catppuccin-macchiato.svg" alt="catppuccin macchiato" />
+</picture>
+
+*Catppuccin Mocha*
+
+<picture>
+    <img width="500" src="./assets/catppuccin-mocha.svg" alt="catppuccin mocha" />
+</picture>
+
 ## Usage
 
 Use `go get` to download the dependency.

@@ -1,6 +1,6 @@
 module github.com/op/redlog/internal/themes
 
-go 1.22.1
+go 1.19
 
 replace (
 	github.com/op/redlog/internal/logtheme => ../logtheme

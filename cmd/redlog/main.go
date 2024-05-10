@@ -1,10 +1,8 @@
 package main
 
 import (
-	"encoding/json"
 	"flag"
 	"fmt"
-	"io"
 	"math"
 	"os"
 	"path/filepath"
@@ -28,51 +26,19 @@ var (
 func main() {
 	flag.Parse()
 
-	w := os.Stdout
-
 	t, ok := themes.ByName(*flagTheme)
 	if !ok {
-		if *flagTheme != "" {
-			fmt.Fprintf(os.Stderr, "%s: unknown theme: %s\n\n", prog, *flagTheme)
-			os.Exit(1)
-		}
-		for _, t := range themes.Themes {
-			writeJSON(w, struct {
-				Name string `json:"name"`
-			}{
-				Name: strings.ToLower(t.Name),
-			})
-		}
-		os.Exit(0)
+		fmt.Fprintf(os.Stderr, "%s: unknown theme: %s\n\n", prog, *flagTheme)
+		os.Exit(1)
 	}
 
 	v, ok := themes.VariantByName(t, *flagVariant)
 	if !ok {
-		if *flagVariant != "" {
-			fmt.Fprintf(os.Stderr, "%s: unknown variant: %s\n\n", prog, *flagVariant)
-			os.Exit(1)
-		}
-		for _, f := range t.Variants {
-			writeJSON(w, struct {
-				Name       string `json:"name"`
-				Background string `json:"background"`
-			}{
-				Name:       strings.ToLower(f.Name),
-				Background: f.Background,
-			})
-		}
-		os.Exit(0)
+		fmt.Fprintf(os.Stderr, "%s: unknown variant: %s\n\n", prog, *flagVariant)
+		os.Exit(1)
 	}
 
 	writeLog(t, v)
-}
-
-func writeJSON(w io.Writer, v any) {
-	e := json.NewEncoder(w)
-	e.SetEscapeHTML(false)
-	if err := e.Encode(v); err != nil {
-		log.Fatal(err)
-	}
 }
 
 func writeLog(t logtheme.Theme, v logtheme.Variant) {
