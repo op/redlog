@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+FREEZE="go run github.com/charmbracelet/freeze@v0.1.6"
+LOGSTYLES="go run github.com/op/logstyles/cmd/logstyles"
+ASSETS="$(git rev-parse --show-toplevel)/assets"
+
+for theme_json in $($LOGSTYLES); do
+	theme_name=$(jq -r '.name' <<<"$theme_json")
+	for variant_json in $($LOGSTYLES -theme "$theme_name"); do
+		variant_name=$(jq -r '.name' <<<"$variant_json")
+		background=$(jq -r '.background' <<<"$variant_json")
+
+		$FREEZE \
+			--background "$background" \
+			--font.family "Noto Mono" \
+			--font.size 16 \
+			--window \
+			--shadow.blur 20 \
+			--shadow.x 0 \
+			--shadow.y 5 \
+			--border.radius 8 \
+			--border.width 1 \
+			--border.color "#515151" \
+			--padding 20 \
+			--execute "$LOGSTYLES -theme $theme_name -variant $variant_name" \
+			--output "$ASSETS/$theme_name-$variant_name.webp"
+	done
+done
