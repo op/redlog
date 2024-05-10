@@ -46,7 +46,7 @@ func writeLog(t logtheme.Theme, v logtheme.Variant) {
 
 	num := 0
 	l := log.NewWithOptions(os.Stderr, log.Options{
-		TimeFunction: func(t time.Time) time.Time {
+		TimeFunction: func(_ time.Time) time.Time {
 			num = num + 1
 			return time.Unix(1234567+int64(math.Pow10(num)), 0)
 		},

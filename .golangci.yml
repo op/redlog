@@ -1,0 +1,21 @@
+run:
+  tests: false
+
+linters:
+  enable:
+    - bodyclose
+    - dupl
+    - exportloopref
+    - goconst
+    - godot
+    - godox
+    - goimports
+    - goprintffuncname
+    - gosec
+    - misspell
+    - nolintlint
+    - prealloc
+    - revive
+    - unconvert
+    - unparam
+    - whitespace
