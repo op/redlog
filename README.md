@@ -62,6 +62,7 @@ The Red Log package comes with a global `Default` style.
 
 ```go
 log.SetStyles(redlog.Default)
+slog.SetDefault(slog.New(log.Default()))
 ```
 
 It is possible to request a specific theme.

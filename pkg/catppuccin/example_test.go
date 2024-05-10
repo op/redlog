@@ -1,6 +1,7 @@
 package catppuccin
 
 import (
+	"log/slog"
 	"os"
 
 	"github.com/charmbracelet/log"
@@ -11,5 +12,15 @@ func Example() {
 	// TODO: submit pr to add Styles to the Options struct
 	logger.SetStyles(New(Adaptive(Latte, Mocha)))
 	logger.Info("purrr 🐾")
-	// Output: INFO purrr 🐾
+
+	log.SetDefault(logger)
+	log.Info("purrr 🐱")
+
+	slog.SetDefault(slog.New(logger))
+	slog.Info("purrr 😸")
+
+	// Output:
+	// INFO purrr 🐾
+	// INFO purrr 🐱
+	// INFO purrr 😸
 }
