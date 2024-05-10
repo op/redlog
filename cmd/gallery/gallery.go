@@ -26,7 +26,6 @@ func main() {
 
 	for _, t := range themes.Themes {
 		for _, v := range t.Variants {
-
 			execute := fmt.Sprintf(
 				`build/redlog -theme "%s" -variant "%s"`,
 				t.Name, v.Name,
@@ -34,6 +33,7 @@ func main() {
 			filename := strings.ToLower(fmt.Sprintf("%s-%s.svg", t.Name, v.Name))
 			output := filepath.Join("assets", filename)
 
+			// #nosec G204
 			cmd := exec.Command(
 				"freeze",
 				"--background", v.Background,

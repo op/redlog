@@ -1,18 +1,14 @@
-name: build
+name: lint
 
 on: [push, pull_request]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-22.04
-
-    strategy:
-      matrix:
-        go_version: ["1.21", stable]
 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
-          go-version: ${{ matrix.go_version }}
-      - run: make
+          go-version-file: go.mod
+      - uses: golangci/golangci-lint-action@v6
