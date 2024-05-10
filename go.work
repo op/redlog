@@ -1,0 +1,8 @@
+go 1.19
+
+use (
+	.
+	./internal/logtheme
+	./internal/themes
+	./pkg/catppuccin
+)

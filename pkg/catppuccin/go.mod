@@ -1,6 +1,6 @@
 module github.com/op/redlog/pkg/catppuccin
 
-go 1.22.1
+go 1.19
 
 require (
 	github.com/catppuccin/go v0.2.0

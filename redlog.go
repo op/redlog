@@ -5,22 +5,18 @@ import (
 	"github.com/op/redlog/internal/themes"
 )
 
-type option struct {
-	name    string
-	variant string
-}
-
-type Option func(*option)
+// Default is the default theme style.
+var Default = themes.Default.Default.Styles
 
 // WithVariant prefers the specific variant of a theme.
 func WithVariant(name string) func(*option) {
 	return func(o *option) { o.variant = name }
 }
 
-// Default is the default theme style.
-var Default = themes.Default.Default.Styles
-
 // Theme returns the most suitable theme given the provided arguments.
+//
+// This function will fallback to the default theme or the found themes
+// variant, if the requested was not found.
 func Theme(name string, opts ...Option) *log.Styles {
 	o := option{name: name}
 	for _, opt := range opts {
@@ -36,4 +32,11 @@ func Theme(name string, opts ...Option) *log.Styles {
 		return t.Default.Styles
 	}
 	return v.Styles
+}
+
+type Option func(*option)
+
+type option struct {
+	name    string
+	variant string
 }

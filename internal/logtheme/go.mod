@@ -1,6 +1,6 @@
 module github.com/op/redlog/internal/logtheme
 
-go 1.22.1
+go 1.19
 
 require github.com/charmbracelet/log v0.4.0
 
