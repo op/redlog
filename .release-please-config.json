@@ -12,13 +12,13 @@
       ]
     },
     "internal/logtheme": {
-      "component": "logtheme"
+      "component": "internal/logtheme"
     },
     "internal/themes": {
-      "component": "themes"
+      "component": "internal/themes"
     },
     "pkg/catppuccin": {
-      "component": "catppuccin"
+      "component": "pkg/catppuccin"
     }
   }
 }
