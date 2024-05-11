@@ -1,4 +1,4 @@
-# Catppuccin for [log](https://github.com/charmbracelet/log)
+# [Catppuccin](https://catppuccin.com) for [log](https://github.com/charmbracelet/log)
 
 <p align="center">
     <a href="https://github.com/op/redlog/stargazers"><img src="https://img.shields.io/github/stars/op/redlog?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
