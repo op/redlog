@@ -2,15 +2,10 @@ module github.com/op/redlog
 
 go 1.21
 
-replace (
-	github.com/op/redlog/internal/themes => ./internal/themes
-	github.com/op/redlog/pkg/catppuccin => ./pkg/catppuccin
-)
-
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/themes v0.0.1
-	github.com/op/redlog/pkg/catppuccin v0.0.1
+	github.com/op/redlog/internal/themes v0.1.0
+	github.com/op/redlog/pkg/catppuccin v0.1.0
 )
 
 require (
@@ -26,4 +21,9 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/sys v0.13.0 // indirect
+)
+
+replace (
+	github.com/op/redlog/internal/themes => ./internal/themes
+	github.com/op/redlog/pkg/catppuccin => ./pkg/catppuccin
 )
