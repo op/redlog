@@ -1,10 +1,15 @@
 {
+  "release-type": "go",
+  "prerelease": true,
   "packages": {
     "pkg/catppuccin": {
       "component": "catppuccin"
     },
     ".": {
-      "component": "redlog"
+      "component": "redlog",
+      "exclude-path": [
+        "pkg/catppuccin"
+      ]
     }
   }
 }
