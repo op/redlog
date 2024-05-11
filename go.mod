@@ -10,8 +10,8 @@ replace (
 
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/logtheme v1.2.0
-	github.com/op/redlog/internal/themes v1.2.0
+	github.com/op/redlog/internal/logtheme v1.2.1
+	github.com/op/redlog/internal/themes v1.2.1
 )
 
 require (
