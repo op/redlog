@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/op/redlog/compare/catppuccin-v1.0.0...catppuccin-v1.1.0) (2024-05-11)
+
+
+### Features
+
+* **catppuccin:** bump version ([ad1a9fb](https://github.com/op/redlog/commit/ad1a9fb6175fb72643119ffd2ccfdc72da028c33))
+* **catppuccin:** bump version ([db94821](https://github.com/op/redlog/commit/db94821db4fc92b2682bdd8cccdfb8fb38db547a))
+
 ## 1.0.0 (2024-05-11)
 
 
