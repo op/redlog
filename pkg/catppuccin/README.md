@@ -52,21 +52,18 @@ import (
 )
 ```
 
-The package comes with a `Default` you can use.
+To make use of one light and one dark theme, you can create an adaptive style
+which automatically switch to the most suitable style based on the terminal's
+mode.
 
 ```go
-log.SetStyles(catppuccin.Default.Styles)
-slog.SetDefault(slog.New(log.Default()))
+theme := catppuccin.Adaptive(catppuccin.Latte, catppuccin.Mocha)
+log.SetStyles(catppuccin.Styles(theme))
 ```
 
-To use a specific variant, request it by name.
+To use a specific variant, use it as-is.
 
 ```go
-// logger always uses Macchiato
-logger := log.New(os.Stderr)
-logger.SetStyles(catppuccin.Macchiato.Styles)
-
-// update default styles to use an adaptive theme
-variant := catppuccin.Adaptive(catppuccin.Latte, catppuccin.Mocha)
-log.SetStyles(catppuccin.New(variant))
+log.SetStyles(catppuccin.Styles(catppuccin.Mocha))
+slog.SetDefault(slog.New(log.Default()))
 ```
