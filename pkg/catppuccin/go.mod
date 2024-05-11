@@ -6,7 +6,7 @@ require (
 	github.com/catppuccin/go v0.2.0
 	github.com/charmbracelet/lipgloss v0.10.0
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/logtheme v1.4.0
+	github.com/op/redlog/internal/logtheme v1.0.0
 )
 
 require (
