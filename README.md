@@ -114,11 +114,13 @@ clone`.
 git dolly https://github.com/op/redlog
 ```
 
-Use `make` to make it easier to build and run tests for all modules.
+Running `make` is usually sufficient since it does everything. There is help
+available with `make help`.
 
 ```bash
-make
+make clean && make
 ```
+
 
 This also updates all example assets which you will find in
 [assets/](./assets/). You can also test this in your terminal by running the
