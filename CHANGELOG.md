@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/op/redlog/compare/redlog/v1.5.0...redlog/v1.5.1) (2024-05-11)
+
+
+### Bug Fixes
+
+* update component name ([1924fa0](https://github.com/op/redlog/commit/1924fa0fc335c3a4db340d0f2dddc436d64fcafb))
+
 ## [1.5.0](https://github.com/op/redlog/compare/redlog-v1.4.2...redlog/v1.5.0) (2024-05-11)
 
 
