@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/op/redlog/compare/v1.1.0...v1.1.1) (2024-05-11)
+
+
+### Bug Fixes
+
+* new version with license ([5809ad9](https://github.com/op/redlog/commit/5809ad9718acacf5adb820c1f7776f391c9f5484))
+
 ## [1.1.0](https://github.com/op/redlog/compare/v1.0.0...v1.1.0) (2024-05-11)
 
 
