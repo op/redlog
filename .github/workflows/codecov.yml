@@ -1,6 +1,9 @@
 name: test
 
 on:
+  push:
+    paths:
+      - "**/*.go"
   pull_request:
     paths:
       - "**.go"
