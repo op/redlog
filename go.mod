@@ -10,8 +10,8 @@ replace (
 
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/logtheme v0.0.0-00010101000000-000000000000
-	github.com/op/redlog/internal/themes v0.0.0-00010101000000-000000000000
+	github.com/op/redlog/internal/logtheme v1.4.0
+	github.com/op/redlog/internal/themes v1.4.0
 )
 
 require (
@@ -24,7 +24,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
-	github.com/op/redlog/pkg/catppuccin v0.0.0-00010101000000-000000000000 // indirect
+	github.com/op/redlog/pkg/catppuccin v1.4.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/sys v0.13.0 // indirect
