@@ -10,6 +10,12 @@
         "pkg/catppuccin"
       ]
     },
+    "internal/logtheme": {
+      "component": "logtheme"
+    },
+    "internal/themes": {
+      "component": "themes"
+    },
     "pkg/catppuccin": {
       "component": "catppuccin"
     }
