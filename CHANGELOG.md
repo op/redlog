@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/op/redlog/compare/v0.1.0...v1.7.0) (2024-05-11)
+
+
+### Features
+
+* release 1.7.0 ([068ba28](https://github.com/op/redlog/commit/068ba285b0790dc83128e14265d17a7488099cdb))
+
+
+### Miscellaneous Chores
+
+* release 1.7.0 ([fa39471](https://github.com/op/redlog/commit/fa39471d4a84a7308b731ddfda4a692d6b8b5da0))
+
 ## [0.1.0](https://github.com/op/redlog/compare/v0.0.1...v0.1.0) (2024-05-11)
 
 
