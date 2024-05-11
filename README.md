@@ -112,3 +112,16 @@ Use `make` to make it easier to build and run tests for all modules.
 ```bash
 make
 ```
+
+This also updates all example assets which you will find in
+[assets/](./assets/). You can also test this in your terminal by running the
+`redlog` command.
+
+```bash
+# the default theme (adaptive catppuccin)
+go run ./internal/cmd/redlog -default
+# the default catppuccin variant (adaptive with latte and mocha)
+go run ./internal/cmd/redlog -theme catppuccin -default
+# a specific variant
+go run ./internal/cmd/redlog -theme catppuccin -variant latte
+```

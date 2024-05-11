@@ -18,6 +18,7 @@ import (
 var (
 	flagTheme   = flag.String("theme", "", "Theme to use")
 	flagVariant = flag.String("variant", "", "Variant to use")
+	flagDefault = flag.Bool("default", false, "Allow fallback to default")
 
 	exec = os.Args[0]
 	prog = filepath.Base(exec)
@@ -27,15 +28,19 @@ func main() {
 	flag.Parse()
 
 	t, ok := themes.ByName(*flagTheme)
-	if !ok {
+	if !ok && !*flagDefault {
 		fmt.Fprintf(os.Stderr, "%s: unknown theme: %s\n\n", prog, *flagTheme)
 		os.Exit(1)
+	} else if !ok {
+		t = themes.Default
 	}
 
 	v, ok := themes.VariantByName(t, *flagVariant)
-	if !ok {
+	if !ok && !*flagDefault {
 		fmt.Fprintf(os.Stderr, "%s: unknown variant: %s\n\n", prog, *flagVariant)
 		os.Exit(1)
+	} else if !ok {
+		v = t.Default
 	}
 
 	writeLog(t, v)
