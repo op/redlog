@@ -125,8 +125,9 @@ This also updates all example assets which you will find in
 `redlog` command.
 
 ```bash
+make build/redlog
 # the default theme (adaptive catppuccin)
-go run ./internal/cmd/redlog -default
+./build/redlog -default
 # the default catppuccin variant (adaptive with latte and mocha)
 go run ./internal/cmd/redlog -theme catppuccin -default
 # a specific variant
