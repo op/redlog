@@ -6,7 +6,7 @@
   "prerelease": true,
   "packages": {
     ".": {
-      "component": "redlog",
+      "component": "",
       "exclude-path": [
         "pkg/catppuccin"
       ]
