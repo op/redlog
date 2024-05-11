@@ -23,11 +23,13 @@ var Theme = logtheme.New(
 
 func hexColor(c lipgloss.TerminalColor) string {
 	if c, ok := c.(lipgloss.Color); ok {
-		return string(c)
+		hex := string(c)
+		if len(hex) == 7 {
+			return hex
+		}
 	}
-	// TODO: fix
 	r, g, b, _ := c.RGBA()
-	return fmt.Sprintf("#%02x%02x%02x", r, g, b)
+	return fmt.Sprintf("#%02x%02x%02x", r/0xff, g/0xff, b/0xff)
 }
 
 func newVariant(f Variant) logtheme.Variant {
