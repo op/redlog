@@ -1,4 +1,18 @@
-# catppuccin
+# Catppuccin for [log](https://github.com/charmbracelet/log)
+
+<p align="center">
+    <a href="https://github.com/op/redlog/stargazers"><img src="https://img.shields.io/github/stars/op/redlog?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+    <a href="https://github.com/op/redlog/issues"><img src="https://img.shields.io/github/issues/op/redlog?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/op/redlog/contributors"><img src="https://img.shields.io/github/contributors/op/redlog?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
+
+<picture>
+    <img width="250" src="../../assets/catppuccin-latte.svg" alt="catppuccin latte" />
+    <img width="250" src="../../assets/catppuccin-frappe.svg" alt="catppuccin frappe" />
+    <img width="250" src="../../assets/catppuccin-macchiato.svg" alt="catppuccin macchiato" />
+    <img width="250" src="../../assets/catppuccin-mocha.svg" alt="catppuccin mocha" />
+</picture>
+
 
 Package catppuccin consists of 4 beautiful pastel color palettes, named
 flavors. The theme comes in one light and three dark variants.
@@ -9,10 +23,10 @@ flavors. The theme comes in one light and three dark variants.
 * 🪴 *Frappé* is a less vibrant alternative using subdued colors for a muted
   aesthetic.
 
-* 🪷 *Macchiato* has medium contrast with gentle colors creating a soothing
+* 🌺 *Macchiato* has medium contrast with gentle colors creating a soothing
   atmosphere.
 
-* 🍀 *Mocha* is the original and the darkest variant, offering a cozy feeling
+* 🌿 *Mocha* is the original and the darkest variant, offering a cozy feeling
   with color-rich accents.
 
 ## Usage
