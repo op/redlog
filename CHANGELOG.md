@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/op/redlog/compare/v1.1.2...v1.2.0) (2024-05-11)
+
+
+### Features
+
+* add Default to catppuccin ([f81efbd](https://github.com/op/redlog/commit/f81efbd724619282fcd455effca400a84efaee56))
+* release 1.2 ([c2ec968](https://github.com/op/redlog/commit/c2ec968c396cd5ed048b4a6621751cf519d6a561))
+
+
+### Bug Fixes
+
+* update release-please ([362955a](https://github.com/op/redlog/commit/362955a5395d7abd25bc4eeb16a11992a4f1fe71))
+
 ## [1.1.2](https://github.com/op/redlog/compare/v1.1.1...v1.1.2) (2024-05-11)
 
 
