@@ -6,9 +6,13 @@
   "prerelease": true,
   "packages": {
     ".": {
-      "include-component-in-tag": false
+      "component": ""
     },
-    "internal/themes": {},
-    "pkg/catppuccin": {}
+    "internal/themes": {
+      "component": "internal/themes"
+    },
+    "pkg/catppuccin": {
+      "component": "pkg/catppuccin"
+    }
   }
 }
