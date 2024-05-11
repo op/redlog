@@ -7,16 +7,16 @@
 </p>
 
 <picture>
-    <img width="250" src="../../assets/catppuccin-latte.svg" alt="catppuccin latte" />
+    <img height="120" src="../../assets/catppuccin-latte.svg" alt="catppuccin latte" />
 </picture>
 <picture>
-    <img width="250" src="../../assets/catppuccin-frappe.svg" alt="catppuccin frappe" />
+    <img height="120" src="../../assets/catppuccin-frappe.svg" alt="catppuccin frappe" />
 </picture>
 <picture>
-    <img width="250" src="../../assets/catppuccin-macchiato.svg" alt="catppuccin macchiato" />
+    <img height="120" src="../../assets/catppuccin-macchiato.svg" alt="catppuccin macchiato" />
 </picture>
 <picture>
-    <img width="250" src="../../assets/catppuccin-mocha.svg" alt="catppuccin mocha" />
+    <img height="120" src="../../assets/catppuccin-mocha.svg" alt="catppuccin mocha" />
 </picture>
 
 
