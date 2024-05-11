@@ -107,6 +107,15 @@ log.SetStyles(catppuccin.New(variant))
 
 ## Contributing
 
+Clone the repository.
+
+```bash
+# use git-dolly (https://github.com/op/git-dolly)
+git dolly github.com:op/redlog
+# use git
+git clone https://github.com/op/redlog
+```
+
 Use `make` to make it easier to build and run tests for all modules.
 
 ```bash
