@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "pkg/catppuccin": {
+      "component": "catppuccin"
+    },
+    ".": {
+      "component": "redlog"
+    }
+  }
+}
