@@ -1,17 +1,21 @@
 #!/usr/bin/make -f
 
-all: toolsinstall tidy check build generate
+all: toolsinstall tidy test build generate
 
 clean:
 	@rm -rf ./build
+
+bootstrap:
+	go work init
+	go work use -r .
 
 build: build/redlog build/gallery
 
 build/%:
 	go build -o $@ ./internal/cmd/$*
 
-check:
-	@go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
+test:
+	go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
 
 coverage:
 	@mkdir -p build/
@@ -27,4 +31,4 @@ toolsinstall:
 	@go install github.com/charmbracelet/freeze@v0.1.6
 
 
-.PHONY: all build generate tidy toolsinstall
+.PHONY: all clean bootstrap build coverage generate tidy test toolsinstall

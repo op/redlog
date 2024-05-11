@@ -104,3 +104,12 @@ Then initiate the theme the way that suits your needs.
 variant := catppuccin.Adaptive(catppuccin.Latte, catppuccin.Mocha)
 log.SetStyles(catppuccin.New(variant))
 ```
+
+## Contributing
+
+Initialise `go.work` with `make bootstrap`.
+
+```bash
+make bootstrap
+make
+```
