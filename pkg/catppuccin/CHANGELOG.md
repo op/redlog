@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/op/redlog/compare/pkg/catppuccin/v1.6.1...pkg/catppuccin/v1.6.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* **internal/logtheme:** bump version ([7ff9f0e](https://github.com/op/redlog/commit/7ff9f0e9aff6689bb4b77390050a6c99803159e4))
+
 ## [1.6.1](https://github.com/op/redlog/compare/pkg/catppuccin/v1.6.0...pkg/catppuccin/v1.6.1) (2024-05-11)
 
 
