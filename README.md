@@ -107,9 +107,8 @@ log.SetStyles(catppuccin.New(variant))
 
 ## Contributing
 
-Initialise `go.work` with `make bootstrap`.
+Use `make` to make it easier to build and run tests for all modules.
 
 ```bash
-make bootstrap
 make
 ```

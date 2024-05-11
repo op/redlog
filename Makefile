@@ -5,11 +5,11 @@ all: toolsinstall tidy test build generate
 clean:
 	@rm -rf ./build
 
-bootstrap:
+go.work:
 	go work init
 	go work use -r .
 
-build: build/redlog build/gallery
+build: go.work build/redlog build/gallery
 
 build/%:
 	go build -o $@ ./internal/cmd/$*
