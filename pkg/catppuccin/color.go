@@ -7,10 +7,10 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-// Variant is an interface implemented by all Catppuccin variations.
+// Flavour is an interface implemented by all Catppuccin flavours.
 //
 // This is the catppuccin.Flavour interface but with lipgloss.TerminalColor.
-type Variant interface {
+type Flavour interface {
 	Rosewater() lipgloss.TerminalColor
 	Flamingo() lipgloss.TerminalColor
 	Pink() lipgloss.TerminalColor
@@ -40,14 +40,14 @@ type Variant interface {
 	Name() string
 }
 
-// variant implements the Flavour interface for a single variant.
-type variant struct {
+// flavour implements the Flavour interface for a single flavour.
+type flavour struct {
 	c catppuccin.Flavour
 }
 
 // FromFlavour converts a catppuccin flavour to the Variant in this package.
-func FromFlavour(c catppuccin.Flavour) Variant {
-	return &variant{c}
+func FromFlavour(c catppuccin.Flavour) Flavour {
+	return &flavour{c}
 }
 
 // color converts a catppuccin color to a lipgloss color.
@@ -56,137 +56,137 @@ func color(c catppuccin.Color) lipgloss.TerminalColor {
 	return lipgloss.Color(c.Hex)
 }
 
-func (v variant) Rosewater() lipgloss.TerminalColor {
+func (v flavour) Rosewater() lipgloss.TerminalColor {
 	return color(v.c.Rosewater())
 }
 
-func (v variant) Flamingo() lipgloss.TerminalColor {
+func (v flavour) Flamingo() lipgloss.TerminalColor {
 	return color(v.c.Flamingo())
 }
 
-func (v variant) Pink() lipgloss.TerminalColor {
+func (v flavour) Pink() lipgloss.TerminalColor {
 	return color(v.c.Pink())
 }
 
-func (v variant) Mauve() lipgloss.TerminalColor {
+func (v flavour) Mauve() lipgloss.TerminalColor {
 	return color(v.c.Mauve())
 }
 
-func (v variant) Red() lipgloss.TerminalColor {
+func (v flavour) Red() lipgloss.TerminalColor {
 	return color(v.c.Red())
 }
 
-func (v variant) Maroon() lipgloss.TerminalColor {
+func (v flavour) Maroon() lipgloss.TerminalColor {
 	return color(v.c.Maroon())
 }
 
-func (v variant) Peach() lipgloss.TerminalColor {
+func (v flavour) Peach() lipgloss.TerminalColor {
 	return color(v.c.Peach())
 }
 
-func (v variant) Yellow() lipgloss.TerminalColor {
+func (v flavour) Yellow() lipgloss.TerminalColor {
 	return color(v.c.Yellow())
 }
 
-func (v variant) Green() lipgloss.TerminalColor {
+func (v flavour) Green() lipgloss.TerminalColor {
 	return color(v.c.Green())
 }
 
-func (v variant) Teal() lipgloss.TerminalColor {
+func (v flavour) Teal() lipgloss.TerminalColor {
 	return color(v.c.Teal())
 }
 
-func (v variant) Sky() lipgloss.TerminalColor {
+func (v flavour) Sky() lipgloss.TerminalColor {
 	return color(v.c.Sky())
 }
 
-func (v variant) Sapphire() lipgloss.TerminalColor {
+func (v flavour) Sapphire() lipgloss.TerminalColor {
 	return color(v.c.Sapphire())
 }
 
-func (v variant) Blue() lipgloss.TerminalColor {
+func (v flavour) Blue() lipgloss.TerminalColor {
 	return color(v.c.Blue())
 }
 
-func (v variant) Lavender() lipgloss.TerminalColor {
+func (v flavour) Lavender() lipgloss.TerminalColor {
 	return color(v.c.Lavender())
 }
 
-func (v variant) Text() lipgloss.TerminalColor {
+func (v flavour) Text() lipgloss.TerminalColor {
 	return color(v.c.Text())
 }
 
-func (v variant) Subtext1() lipgloss.TerminalColor {
+func (v flavour) Subtext1() lipgloss.TerminalColor {
 	return color(v.c.Subtext1())
 }
 
-func (v variant) Subtext0() lipgloss.TerminalColor {
+func (v flavour) Subtext0() lipgloss.TerminalColor {
 	return color(v.c.Subtext0())
 }
 
-func (v variant) Overlay2() lipgloss.TerminalColor {
+func (v flavour) Overlay2() lipgloss.TerminalColor {
 	return color(v.c.Overlay2())
 }
 
-func (v variant) Overlay1() lipgloss.TerminalColor {
+func (v flavour) Overlay1() lipgloss.TerminalColor {
 	return color(v.c.Overlay1())
 }
 
-func (v variant) Overlay0() lipgloss.TerminalColor {
+func (v flavour) Overlay0() lipgloss.TerminalColor {
 	return color(v.c.Overlay0())
 }
 
-func (v variant) Surface2() lipgloss.TerminalColor {
+func (v flavour) Surface2() lipgloss.TerminalColor {
 	return color(v.c.Surface2())
 }
 
-func (v variant) Surface1() lipgloss.TerminalColor {
+func (v flavour) Surface1() lipgloss.TerminalColor {
 	return color(v.c.Surface1())
 }
 
-func (v variant) Surface0() lipgloss.TerminalColor {
+func (v flavour) Surface0() lipgloss.TerminalColor {
 	return color(v.c.Surface0())
 }
 
-func (v variant) Crust() lipgloss.TerminalColor {
+func (v flavour) Crust() lipgloss.TerminalColor {
 	return color(v.c.Crust())
 }
 
-func (v variant) Mantle() lipgloss.TerminalColor {
+func (v flavour) Mantle() lipgloss.TerminalColor {
 	return color(v.c.Mantle())
 }
 
-func (v variant) Base() lipgloss.TerminalColor {
+func (v flavour) Base() lipgloss.TerminalColor {
 	return color(v.c.Base())
 }
 
-func (v variant) Name() string {
+func (v flavour) Name() string {
 	return v.c.Name()
 }
 
-// adaptiveVariant implements the Variant interface using two flavours, one
+// adaptive implements the Flavour interface using two flavours, one
 // light and one dark, and adapts to the terminal background color.
-type adaptiveVariant struct {
-	light    Variant
-	dark     Variant
+type adaptive struct {
+	light    Flavour
+	dark     Flavour
 	renderer *lipgloss.Renderer
 }
 
-type VariantOption func(f *adaptiveVariant)
+type AdaptiveOption func(a *adaptive)
 
-func WithRenderer(r *lipgloss.Renderer) VariantOption {
-	return func(f *adaptiveVariant) { f.renderer = r }
+func WithRenderer(r *lipgloss.Renderer) AdaptiveOption {
+	return func(a *adaptive) { a.renderer = r }
 }
 
-// Adaptive creates an adaptive variant based on the provided variants.
+// Adaptive creates an adaptive variant based on the provided flavours.
 //
-// The Catppuccin theme comes with one light and three dark variants. Use this
+// The Catppuccin theme comes with one light and three dark flavours. Use this
 // function to create your own adaptive variants.
 //
-// Latte has the lightest palette and is a light variant, followed by Frappe,
-// Macchiato, and Mocha -- which all are dark variants.
-func Adaptive(light, dark Variant, opts ...VariantOption) Variant {
-	f := &adaptiveVariant{light: light, dark: dark}
+// Latte has the lightest palette and is a light flavour, followed by Frappe,
+// Macchiato, and Mocha -- which all are dark flavours.
+func Adaptive(light, dark Flavour, opts ...AdaptiveOption) Flavour {
+	f := &adaptive{light: light, dark: dark}
 
 	for _, opt := range opts {
 		opt(f)
@@ -199,117 +199,117 @@ func Adaptive(light, dark Variant, opts ...VariantOption) Variant {
 	return f
 }
 
-func (v adaptiveVariant) color(light, dark lipgloss.TerminalColor) lipgloss.TerminalColor {
+func (v adaptive) color(light, dark lipgloss.TerminalColor) lipgloss.TerminalColor {
 	if v.renderer.HasDarkBackground() {
 		return dark
 	}
 	return light
 }
 
-func (v adaptiveVariant) Rosewater() lipgloss.TerminalColor {
+func (v adaptive) Rosewater() lipgloss.TerminalColor {
 	return v.color(v.light.Rosewater(), v.dark.Rosewater())
 }
 
-func (v adaptiveVariant) Flamingo() lipgloss.TerminalColor {
+func (v adaptive) Flamingo() lipgloss.TerminalColor {
 	return v.color(v.light.Flamingo(), v.dark.Flamingo())
 }
 
-func (v adaptiveVariant) Pink() lipgloss.TerminalColor {
+func (v adaptive) Pink() lipgloss.TerminalColor {
 	return v.color(v.light.Pink(), v.dark.Pink())
 }
 
-func (v adaptiveVariant) Mauve() lipgloss.TerminalColor {
+func (v adaptive) Mauve() lipgloss.TerminalColor {
 	return v.color(v.light.Mauve(), v.dark.Mauve())
 }
 
-func (v adaptiveVariant) Red() lipgloss.TerminalColor {
+func (v adaptive) Red() lipgloss.TerminalColor {
 	return v.color(v.light.Red(), v.dark.Red())
 }
 
-func (v adaptiveVariant) Maroon() lipgloss.TerminalColor {
+func (v adaptive) Maroon() lipgloss.TerminalColor {
 	return v.color(v.light.Maroon(), v.dark.Maroon())
 }
 
-func (v adaptiveVariant) Peach() lipgloss.TerminalColor {
+func (v adaptive) Peach() lipgloss.TerminalColor {
 	return v.color(v.light.Peach(), v.dark.Peach())
 }
 
-func (v adaptiveVariant) Yellow() lipgloss.TerminalColor {
+func (v adaptive) Yellow() lipgloss.TerminalColor {
 	return v.color(v.light.Yellow(), v.dark.Yellow())
 }
 
-func (v adaptiveVariant) Green() lipgloss.TerminalColor {
+func (v adaptive) Green() lipgloss.TerminalColor {
 	return v.color(v.light.Green(), v.dark.Green())
 }
 
-func (v adaptiveVariant) Teal() lipgloss.TerminalColor {
+func (v adaptive) Teal() lipgloss.TerminalColor {
 	return v.color(v.light.Teal(), v.dark.Teal())
 }
 
-func (v adaptiveVariant) Sky() lipgloss.TerminalColor {
+func (v adaptive) Sky() lipgloss.TerminalColor {
 	return v.color(v.light.Sky(), v.dark.Sky())
 }
 
-func (v adaptiveVariant) Sapphire() lipgloss.TerminalColor {
+func (v adaptive) Sapphire() lipgloss.TerminalColor {
 	return v.color(v.light.Sapphire(), v.dark.Sapphire())
 }
 
-func (v adaptiveVariant) Blue() lipgloss.TerminalColor {
+func (v adaptive) Blue() lipgloss.TerminalColor {
 	return v.color(v.light.Blue(), v.dark.Blue())
 }
 
-func (v adaptiveVariant) Lavender() lipgloss.TerminalColor {
+func (v adaptive) Lavender() lipgloss.TerminalColor {
 	return v.color(v.light.Lavender(), v.dark.Lavender())
 }
 
-func (v adaptiveVariant) Text() lipgloss.TerminalColor {
+func (v adaptive) Text() lipgloss.TerminalColor {
 	return v.color(v.light.Text(), v.dark.Text())
 }
 
-func (v adaptiveVariant) Subtext1() lipgloss.TerminalColor {
+func (v adaptive) Subtext1() lipgloss.TerminalColor {
 	return v.color(v.light.Subtext1(), v.dark.Subtext1())
 }
 
-func (v adaptiveVariant) Subtext0() lipgloss.TerminalColor {
+func (v adaptive) Subtext0() lipgloss.TerminalColor {
 	return v.color(v.light.Subtext0(), v.dark.Subtext0())
 }
 
-func (v adaptiveVariant) Overlay2() lipgloss.TerminalColor {
+func (v adaptive) Overlay2() lipgloss.TerminalColor {
 	return v.color(v.light.Overlay2(), v.dark.Overlay2())
 }
 
-func (v adaptiveVariant) Overlay1() lipgloss.TerminalColor {
+func (v adaptive) Overlay1() lipgloss.TerminalColor {
 	return v.color(v.light.Overlay1(), v.dark.Overlay1())
 }
 
-func (v adaptiveVariant) Overlay0() lipgloss.TerminalColor {
+func (v adaptive) Overlay0() lipgloss.TerminalColor {
 	return v.color(v.light.Overlay0(), v.dark.Overlay0())
 }
 
-func (v adaptiveVariant) Surface2() lipgloss.TerminalColor {
+func (v adaptive) Surface2() lipgloss.TerminalColor {
 	return v.color(v.light.Surface2(), v.dark.Surface2())
 }
 
-func (v adaptiveVariant) Surface1() lipgloss.TerminalColor {
+func (v adaptive) Surface1() lipgloss.TerminalColor {
 	return v.color(v.light.Surface1(), v.dark.Surface1())
 }
 
-func (v adaptiveVariant) Surface0() lipgloss.TerminalColor {
+func (v adaptive) Surface0() lipgloss.TerminalColor {
 	return v.color(v.light.Surface0(), v.dark.Surface0())
 }
 
-func (v adaptiveVariant) Crust() lipgloss.TerminalColor {
+func (v adaptive) Crust() lipgloss.TerminalColor {
 	return v.color(v.light.Crust(), v.dark.Crust())
 }
 
-func (v adaptiveVariant) Mantle() lipgloss.TerminalColor {
+func (v adaptive) Mantle() lipgloss.TerminalColor {
 	return v.color(v.light.Mantle(), v.dark.Mantle())
 }
 
-func (v adaptiveVariant) Base() lipgloss.TerminalColor {
+func (v adaptive) Base() lipgloss.TerminalColor {
 	return v.color(v.light.Base(), v.dark.Base())
 }
 
-func (v adaptiveVariant) Name() string {
+func (v adaptive) Name() string {
 	return fmt.Sprintf("%s/%s", v.light.Name(), v.dark.Name())
 }
