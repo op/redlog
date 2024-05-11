@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/op/redlog/compare/catppuccin-v1.4.0...catppuccin-v1.4.1) (2024-05-11)
+
+
+### Bug Fixes
+
+* versions ([4a2abfb](https://github.com/op/redlog/commit/4a2abfb8a2479d103f255e4cdb0a61be04b75e60))
+
 ## [1.4.0](https://github.com/op/redlog/compare/catppuccin-v1.3.0...catppuccin-v1.4.0) (2024-05-11)
 
 
