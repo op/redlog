@@ -12,7 +12,7 @@ Gloss styles for [logs][log]. 🪵
 It contains a set of styles that can be used with the [log] package. The
 following themes are provided:
 
-* [catppucchin](https://catppuccin.com)
+* [catppucchin](https://catppuccin.com) -- adaptive variants
 
 [log]: /charmbracelet/log
 
@@ -61,35 +61,18 @@ import (
 )
 ```
 
-The Red Log package comes with a global `Default` style.
+The Red Log package comes with a select few styles of the themes listed above.
+These are ready to be used straight away.
 
 ```go
-log.SetStyles(redlog.Default)
+log.SetStyles(redlog.Catppuccin.Mocha)
 slog.SetDefault(slog.New(log.Default()))
-```
-
-It is possible to request a specific theme.
-
-```go
-styles, _ := redlog.Theme("catppuccin")
-logger := log.New(os.Stderr)
-logger.SetStyles(styles)
-```
-
-And with a specific variation of the theme.
-
-```go
-styles, err := redlog.Theme("catppuccin", redlog.WithVariant("mocha"))
-if err != nil {
-    log.Fatal(err)
-}
-log.SetStyles(styles)
 ```
 
 ## Specific theme
 
 If you want to limit the number of dependencies, or make some customisation of
-the theme, you can directly import and use the theme.
+the theme yourself, you can directly import and use the theme.
 
 ```go
 import (
@@ -104,37 +87,5 @@ Then initiate the theme the way that suits your needs.
 // use an adaptive theme that switches between light and dark depending on the
 // terminal's color scheme
 variant := catppuccin.Adaptive(catppuccin.Latte, catppuccin.Mocha)
-log.SetStyles(catppuccin.New(variant))
-```
-
-## Contributing
-
-Clone the repository using [`git dolly`](https://github.com/op/dolly) or `git
-clone`.
-
-```bash
-git dolly https://github.com/op/redlog
-```
-
-Running `make` is usually sufficient since it does everything. There is help
-available with `make help`.
-
-```bash
-make clean && make
-```
-
-
-This also updates all example assets which you will find in
-[assets/](./assets/). You can also test this in your terminal by running the
-`redlog` command.
-
-```bash
-# use make to build
-make build/redlog
-# run with default theme (adaptive catppuccin)
-./build/redlog -default
-# run directly with go and use ctppuccin only
-go run ./internal/cmd/redlog -theme catppuccin -default
-# run with a specific variant
-go run ./internal/cmd/redlog -theme catppuccin -variant latte
+log.SetStyles(catppuccin.Styles(variant))
 ```
