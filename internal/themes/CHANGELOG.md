@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/op/redlog/compare/themes-v1.0.0...themes/v1.1.0) (2024-05-11)
+
+
+### Features
+
+* **catppuccin:** bump version ([c7a7624](https://github.com/op/redlog/commit/c7a762495084e498b6178145cbec3fd83cac02a5))
+
 ## 1.0.0 (2024-05-11)
 
 
