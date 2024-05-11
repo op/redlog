@@ -21,7 +21,7 @@ generate:
 	@build/gallery
 
 tidy:
-	@go list -m -f '{{.Dir}}' | parallel 'go mod tidy -C'
+	@go list -m -f '{{.Dir}}' | parallel -v 'go mod tidy -C'
 
 toolsinstall:
 	@go install github.com/charmbracelet/freeze@v0.1.6
