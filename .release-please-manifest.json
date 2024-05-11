@@ -1,6 +1,5 @@
 {
   ".": "1.6.2",
   "pkg/catppuccin": "1.6.3",
-  "internal/logtheme": "1.2.2",
   "internal/themes": "1.2.3"
 }
