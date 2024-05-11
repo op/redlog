@@ -3,15 +3,14 @@ module github.com/op/redlog
 go 1.21
 
 replace (
-	github.com/op/redlog/internal/logtheme => ./internal/logtheme
 	github.com/op/redlog/internal/themes => ./internal/themes
 	github.com/op/redlog/pkg/catppuccin => ./pkg/catppuccin
 )
 
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/logtheme v1.2.2
 	github.com/op/redlog/internal/themes v1.2.3
+	github.com/op/redlog/pkg/catppuccin v1.6.3
 )
 
 require (
@@ -24,7 +23,6 @@ require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
-	github.com/op/redlog/pkg/catppuccin v1.6.3 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/sys v0.13.0 // indirect

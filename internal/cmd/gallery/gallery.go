@@ -10,7 +10,6 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/log"
-	"github.com/op/redlog"
 	"github.com/op/redlog/internal/themes"
 )
 
@@ -21,8 +20,6 @@ var (
 
 func main() {
 	flag.Parse()
-
-	log.SetStyles(redlog.Default)
 
 	for _, t := range themes.Themes {
 		for _, v := range t.Variants {

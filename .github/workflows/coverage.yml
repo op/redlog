@@ -19,8 +19,8 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: make build coverage
+      - run: make coverage
       - uses: codecov/codecov-action@v4.0.1
         with:
-          files: ./build/redlog.coverage ./build/pkgs.coverage
+          files: ./build/redlog.coverage ./build/internal.coverage ./build/pkg.coverage
           token: ${{ secrets.CODECOV_TOKEN }}

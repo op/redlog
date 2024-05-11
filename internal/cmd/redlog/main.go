@@ -11,14 +11,12 @@ import (
 
 	"github.com/charmbracelet/log"
 
-	"github.com/op/redlog/internal/logtheme"
 	"github.com/op/redlog/internal/themes"
 )
 
 var (
 	flagTheme   = flag.String("theme", "", "Theme to use")
 	flagVariant = flag.String("variant", "", "Variant to use")
-	flagDefault = flag.Bool("default", false, "Allow fallback to default")
 
 	exec = os.Args[0]
 	prog = filepath.Base(exec)
@@ -28,25 +26,21 @@ func main() {
 	flag.Parse()
 
 	t, ok := themes.ByName(*flagTheme)
-	if !ok && !*flagDefault {
+	if !ok {
 		fmt.Fprintf(os.Stderr, "%s: unknown theme: %s\n\n", prog, *flagTheme)
 		os.Exit(1)
-	} else if !ok {
-		t = themes.Default
 	}
 
-	v, ok := themes.VariantByName(t, *flagVariant)
-	if !ok && !*flagDefault {
+	v, ok := t.Variant(*flagVariant)
+	if !ok {
 		fmt.Fprintf(os.Stderr, "%s: unknown variant: %s\n\n", prog, *flagVariant)
 		os.Exit(1)
-	} else if !ok {
-		v = t.Default
 	}
 
 	writeLog(t, v)
 }
 
-func writeLog(t logtheme.Theme, v logtheme.Variant) {
+func writeLog(t *themes.Theme, v *themes.Variant) {
 	log.Helper()
 
 	num := 0

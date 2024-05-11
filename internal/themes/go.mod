@@ -2,21 +2,17 @@ module github.com/op/redlog/internal/themes
 
 go 1.21
 
-replace (
-	github.com/op/redlog/internal/logtheme => ../logtheme
-	github.com/op/redlog/pkg/catppuccin => ../../pkg/catppuccin
-)
+replace github.com/op/redlog/pkg/catppuccin => ../../pkg/catppuccin
 
 require (
-	github.com/op/redlog/internal/logtheme v1.2.2
+	github.com/charmbracelet/lipgloss v0.10.0
+	github.com/charmbracelet/log v0.4.0
 	github.com/op/redlog/pkg/catppuccin v1.6.3
 )
 
 require (
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/catppuccin/go v0.2.0 // indirect
-	github.com/charmbracelet/lipgloss v0.10.0 // indirect
-	github.com/charmbracelet/log v0.4.0 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.18 // indirect

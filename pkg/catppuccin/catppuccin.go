@@ -22,11 +22,11 @@ var (
 	Mocha = FromFlavour(catppuccin.Mocha)
 )
 
-// New creates new log styles based the provided flavor of Catppuccin.
+// Styles creates new log styles based the provided flavor of Catppuccin.
 //
 // For information about the different flavors and style guide, see:
 // https://catppuccin.com/
-func New(f Variant) *log.Styles {
+func Styles(f Flavour) *log.Styles {
 	d := log.DefaultStyles()
 
 	// message metadata
