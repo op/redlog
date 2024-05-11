@@ -6,19 +6,9 @@
   "prerelease": true,
   "packages": {
     ".": {
-      "component": "",
-      "exclude-path": [
-        "pkg/catppuccin"
-      ]
+      "include-component-in-tag": false
     },
-    "internal/logtheme": {
-      "component": "internal/logtheme"
-    },
-    "internal/themes": {
-      "component": "internal/themes"
-    },
-    "pkg/catppuccin": {
-      "component": "pkg/catppuccin"
-    }
+    "internal/themes": {},
+    "pkg/catppuccin": {}
   }
 }
