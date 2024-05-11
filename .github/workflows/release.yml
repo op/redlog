@@ -17,3 +17,4 @@ jobs:
         with:
           token: ${{ secrets.RELEASE_PLEASE_PAT_TOKEN }}
           include-component-in-tag: true
+          config-file: .release-please-config.json
