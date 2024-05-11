@@ -8,7 +8,7 @@ clean:
 build: build/redlog build/gallery
 
 build/%:
-	go build -o $@ ./cmd/$*
+	go build -o $@ ./internal/cmd/$*
 
 check:
 	@go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
