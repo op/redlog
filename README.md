@@ -125,11 +125,12 @@ This also updates all example assets which you will find in
 `redlog` command.
 
 ```bash
+# use make to build
 make build/redlog
-# the default theme (adaptive catppuccin)
+# run with default theme (adaptive catppuccin)
 ./build/redlog -default
-# the default catppuccin variant (adaptive with latte and mocha)
+# run directly with go and use ctppuccin only
 go run ./internal/cmd/redlog -theme catppuccin -default
-# a specific variant
+# run with a specific variant
 go run ./internal/cmd/redlog -theme catppuccin -variant latte
 ```
