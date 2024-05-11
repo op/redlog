@@ -7,7 +7,7 @@ replace github.com/op/redlog/pkg/catppuccin => ../../pkg/catppuccin
 require (
 	github.com/charmbracelet/lipgloss v0.10.0
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/pkg/catppuccin v1.6.3
+	github.com/op/redlog/pkg/catppuccin v0.0.1
 )
 
 require (

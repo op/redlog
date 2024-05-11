@@ -9,8 +9,8 @@ replace (
 
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/themes v1.2.3
-	github.com/op/redlog/pkg/catppuccin v1.6.3
+	github.com/op/redlog/internal/themes v0.0.1
+	github.com/op/redlog/pkg/catppuccin v0.0.1
 )
 
 require (
