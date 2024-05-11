@@ -1,5 +1,5 @@
 {
-  ".": "0.0.1",
-  "pkg/catppuccin": "0.0.1",
-  "internal/themes": "0.0.1"
+  ".": "0.1.0",
+  "pkg/catppuccin": "0.1.0",
+  "internal/themes": "0.1.0"
 }

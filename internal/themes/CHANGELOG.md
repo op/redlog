@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/op/redlog/compare/internal/themes/v0.0.1...internal/themes/v0.1.0) (2024-05-11)
+
+
+### Features
+
+* trigger release ([86bf427](https://github.com/op/redlog/commit/86bf4275944f27ed36821b8d522affe8d075addb))
+
 ## [0.0.1](https://github.com/op/redlog/compare/internal/themes-v0.0.1...internal/themes/v0.0.1) (2024-05-11)
 
 
