@@ -16,6 +16,8 @@ following themes are provided:
 
 [log]: /charmbracelet/log
 
+🚧 This is a work in progress. Sorry for the inconvenience and odd v1. 🚧
+
 ## Gallery
 
 *Catppuccin Latte*
