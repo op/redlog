@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/charmbracelet/lipgloss v0.10.0
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/pkg/catppuccin v0.1.0
+	github.com/op/redlog/pkg/catppuccin v1.7.0
 )
 
 require (

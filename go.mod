@@ -4,8 +4,8 @@ go 1.21
 
 require (
 	github.com/charmbracelet/log v0.4.0
-	github.com/op/redlog/internal/themes v0.1.0
-	github.com/op/redlog/pkg/catppuccin v0.1.0
+	github.com/op/redlog/internal/themes v1.7.0
+	github.com/op/redlog/pkg/catppuccin v1.7.0
 )
 
 require (
