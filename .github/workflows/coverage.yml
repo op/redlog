@@ -3,18 +3,21 @@ name: test
 on:
   push:
     paths:
-      - "**.go"
+      - "**/*.go"
   pull_request:
     paths:
-      - "**.go"
+      - "**/*.go"
 
 jobs:
-  test:
+  coverage:
     runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - uses: codecov/codecov-action@v4.0.1
         with:
+          file: ./build/coverage.txt
           token: ${{ secrets.CODECOV_TOKEN }}
