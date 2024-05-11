@@ -17,9 +17,12 @@ build/%:
 test: ## run tests
 	go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
 
+PKG := pkg/*
+
 coverage: ## generate coverage report
 	@mkdir -p build/
-	go test -coverpkg=./...,./pkg/catppuccin,./internal/logtheme,./internal/themes -covermode=atomic -coverprofile=build/coverage.txt ./... ./pkg/catppuccin/... ./internal/logtheme ./internal/themes
+	go test -coverprofile=build/redlog.coverage ./...
+	go test -coverprofile=build/pkgs.coverage ./pkg/catppuccin
 
 generate: build/gallery ## generate images in asset/
 	@build/gallery
