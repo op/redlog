@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.2](https://github.com/op/redlog/compare/redlog/v1.5.1...redlog/v1.5.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* update go.mod ([a72a7f1](https://github.com/op/redlog/commit/a72a7f1301cc873bffbb1bd606c39ead680e5eb7))
+* update go.mod ([8c342d4](https://github.com/op/redlog/commit/8c342d4aefd050452266ef617ed04dffcb09095b))
+
 ## [1.5.1](https://github.com/op/redlog/compare/redlog/v1.5.0...redlog/v1.5.1) (2024-05-11)
 
 

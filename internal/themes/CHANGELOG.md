@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/op/redlog/compare/internal/themes/v1.2.0...internal/themes/v1.2.1) (2024-05-11)
+
+
+### Bug Fixes
+
+* update go.mod ([a72a7f1](https://github.com/op/redlog/commit/a72a7f1301cc873bffbb1bd606c39ead680e5eb7))
+* update go.mod ([8c342d4](https://github.com/op/redlog/commit/8c342d4aefd050452266ef617ed04dffcb09095b))
+
 ## [1.2.0](https://github.com/op/redlog/compare/internal/themes-v1.1.0...internal/themes/v1.2.0) (2024-05-11)
 
 
