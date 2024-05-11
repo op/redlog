@@ -8,7 +8,7 @@ replace (
 )
 
 require (
-	github.com/op/redlog/internal/logtheme v1.2.1
+	github.com/op/redlog/internal/logtheme v1.2.2
 	github.com/op/redlog/pkg/catppuccin v1.6.1
 )
 
