@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/op/redlog/compare/v1.0.0...v1.1.0) (2024-05-11)
+
+
+### Features
+
+* return error ([0388514](https://github.com/op/redlog/commit/03885140e3ddb94f559e2aba703622e2d989efaa))
+
+
+### Bug Fixes
+
+* create hex color ([388c271](https://github.com/op/redlog/commit/388c271052e6fa7aa5d0d6ad40ec45ce93ada4b9))
+
 ## 1.0.0 (2024-05-10)
 
 
