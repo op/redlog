@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.2](https://github.com/op/redlog/compare/v1.1.1...v1.1.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* generate coverage ([a585cfd](https://github.com/op/redlog/commit/a585cfde8884cbc1360749b0755aa08260ffb0d0))
+* invalid glob ([8625257](https://github.com/op/redlog/commit/86252571bf8c1691dfe88f92d6b34914cc06530c))
+* path for push ([e550982](https://github.com/op/redlog/commit/e5509822ea397565d6c5f8547f641c3eeb71bd2a))
+* require slog ([40e9556](https://github.com/op/redlog/commit/40e9556112d52b3bf43804712ed3935a06c4ddac))
+
 ## [1.1.1](https://github.com/op/redlog/compare/v1.1.0...v1.1.1) (2024-05-11)
 
 
