@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/op/redlog/compare/internal/logtheme/v1.2.1...internal/logtheme/v1.2.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* **internal/logtheme:** bump version ([2a158eb](https://github.com/op/redlog/commit/2a158ebeedbd0e26564040b432cec4ec7870bffc))
+
 ## [1.2.1](https://github.com/op/redlog/compare/internal/logtheme/v1.2.0...internal/logtheme/v1.2.1) (2024-05-11)
 
 
