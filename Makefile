@@ -31,4 +31,4 @@ toolsinstall:
 	@go install github.com/charmbracelet/freeze@v0.1.6
 
 
-.PHONY: all clean bootstrap build coverage generate tidy test toolsinstall
+.PHONY: all clean build coverage generate tidy test toolsinstall
