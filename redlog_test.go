@@ -9,6 +9,7 @@ import (
 
 func TestTheme(t *testing.T) {
 	var (
+		// catppuccin
 		catp          = theme(t, themes.Themes[0], "catppuccin")
 		catpLatte     = variant(t, catp.Variants[0], "latte")
 		catpFrappe    = variant(t, catp.Variants[1], "frappe")

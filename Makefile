@@ -13,6 +13,9 @@ build/%:
 check:
 	@go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
 
+coverage:
+	go test -coverpkg=./...,./pkg/catppuccin,./internal/logtheme,./internal/themes -covermode=atomic -coverprofile=build/coverage.txt ./... ./pkg/catppuccin/... ./internal/logtheme ./internal/themes
+
 generate:
 	@build/gallery
 
