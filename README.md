@@ -1,7 +1,7 @@
 # Red Log
 
 <p>
-    <a href="https://github.com/op/redlog/releases"><img src="https://img.shields.io/github/release/op/redlog.svg" alt="Latest Release"></a>
+    <a href="https://github.com/op/redlog/releases"><img src="https://img.shields.io/github/release/op/redlog.svg?filter=v*" alt="Latest Release"></a>
     <a href="https://pkg.go.dev/github.com/op/redlog?tab=doc"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="Go Docs"></a>
     <a href="https://github.com/op/redlog/actions"><img src="https://github.com/op/redlog/workflows/build/badge.svg" alt="Build Status"></a>
     <a href="https://goreportcard.com/report/github.com/op/redlog"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/op/redlog"></a>
