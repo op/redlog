@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/op/redlog/compare/redlog-v1.3.0...redlog-v1.4.0) (2024-05-11)
+
+
+### Features
+
+* **catppuccin:** bump version ([1ea6b99](https://github.com/op/redlog/commit/1ea6b9970bad6608fe1814b0507d3c9de71f2adf))
+* **catppuccin:** bump version ([ad1a9fb](https://github.com/op/redlog/commit/ad1a9fb6175fb72643119ffd2ccfdc72da028c33))
+* **catppuccin:** bump version ([db94821](https://github.com/op/redlog/commit/db94821db4fc92b2682bdd8cccdfb8fb38db547a))
+
+
+### Bug Fixes
+
+* sync versions ([ee93a5d](https://github.com/op/redlog/commit/ee93a5dc3dec3df7ce3fdf2aa1eb0da9f24fc914))
+
 ## [1.3.0](https://github.com/op/redlog/compare/redlog-v1.2.0...redlog-v1.3.0) (2024-05-11)
 
 
