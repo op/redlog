@@ -1,4 +1,6 @@
 {
-  ".": "1.4.1",
-  "pkg/catppuccin": "1.4.1"
+  ".": "1.4.2",
+  "pkg/catppuccin": "1.4.1",
+  "internal/logtheme": "1.0.0",
+  "internal/themes": "1.0.0"
 }

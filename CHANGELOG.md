@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/op/redlog/compare/redlog-v1.4.1...redlog-v1.4.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* include internal modules in release ([1688b6e](https://github.com/op/redlog/commit/1688b6e97e5b3874d7d8ffb434dc181474eb0e6c))
+
 ## [1.4.1](https://github.com/op/redlog/compare/redlog-v1.4.0...redlog-v1.4.1) (2024-05-11)
 
 
