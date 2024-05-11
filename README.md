@@ -98,6 +98,8 @@ import (
 Then initiate the theme the way that suits your needs.
 
 ```go
+// use an adaptive theme that switches between light and dark depending on the
+// terminal's color scheme
 variant := catppuccin.Adaptive(catppuccin.Latte, catppuccin.Mocha)
 log.SetStyles(catppuccin.New(variant))
 ```

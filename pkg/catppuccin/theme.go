@@ -9,7 +9,7 @@ import (
 )
 
 // Theme consists of 4 beautiful pastel color palettes. The theme comes in one
-// light and three dark variants
+// light and three dark variants.
 var Theme = logtheme.New(
 	"Catppuccin",
 	newVariant(Adaptive(Latte, Mocha)),

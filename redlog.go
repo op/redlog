@@ -8,7 +8,9 @@ import (
 )
 
 var (
-	ErrUnknownTheme   = errors.New("unknown theme")
+	// ErrUnknownTheme is returned when a theme could not found.
+	ErrUnknownTheme = errors.New("unknown theme")
+	// ErrUnknownVariant is returned when a theme variant could not found.
 	ErrUnknownVariant = errors.New("unknown variant")
 )
 
