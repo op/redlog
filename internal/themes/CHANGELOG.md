@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.3](https://github.com/op/redlog/compare/internal/themes/v1.2.2...internal/themes/v1.2.3) (2024-05-11)
+
+
+### Bug Fixes
+
+* bump version ([ef2d306](https://github.com/op/redlog/commit/ef2d3062951d83456514a760d968d8c1398e48d5))
+* **internal/logtheme:** bump version ([c86f76a](https://github.com/op/redlog/commit/c86f76ae682cd9e4a975803b304bcca89d5aba63))
+* **internal/logtheme:** bump version ([2a158eb](https://github.com/op/redlog/commit/2a158ebeedbd0e26564040b432cec4ec7870bffc))
+
 ## [1.2.2](https://github.com/op/redlog/compare/internal/themes/v1.2.1...internal/themes/v1.2.2) (2024-05-11)
 
 
