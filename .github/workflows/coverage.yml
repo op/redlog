@@ -3,9 +3,11 @@ name: coverage
 on:
   push:
     paths:
+      - ".github/workflows/coverage.yml"
       - "**/*.go"
   pull_request:
     paths:
+      - ".github/workflows/coverage.yml"
       - "**/*.go"
 
 jobs:
