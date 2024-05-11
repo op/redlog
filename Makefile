@@ -17,8 +17,6 @@ build/%:
 test: ## run tests
 	go list -m -f '{{.Dir}}' | parallel 'go test {}/...'
 
-PKG := pkg/*
-
 coverage: ## generate coverage report
 	@mkdir -p build/
 	go test -coverprofile=build/redlog.coverage ./...
