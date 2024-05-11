@@ -43,7 +43,7 @@ func TestTheme(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		t.Run(tt.theme+"-"+tt.variant, func(t *testing.T) {
+		t.Run(tt.theme+"/"+tt.variant, func(t *testing.T) {
 			var opts []Option
 			if tt.variant != "" {
 				opts = append(opts, WithVariant(tt.variant))
