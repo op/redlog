@@ -20,5 +20,5 @@ jobs:
       - run: make coverage
       - uses: codecov/codecov-action@v4.0.1
         with:
-          file: ./build/coverage.txt
+          files: ./build/redlog.coverage ./build/pkgs.coverage
           token: ${{ secrets.CODECOV_TOKEN }}
