@@ -21,6 +21,10 @@ var Theme = logtheme.New(
 	},
 )
 
+// Default is the default Catppuccin variant which is an adaptive flavour using
+// Latte for light backgrounds and Mocha for dark backgrounds.
+var Default = Theme.Default
+
 func hexColor(c lipgloss.TerminalColor) string {
 	if c, ok := c.(lipgloss.Color); ok {
 		hex := string(c)
