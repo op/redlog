@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+      - run: make coverage
       - uses: codecov/codecov-action@v4.0.1
         with:
           file: ./build/coverage.txt
